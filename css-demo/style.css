@@ -1,0 +1,21 @@
+html{font-size: 20pt;}
+body{
+ background-color: rgb(232, 184, 184); 
+font-size: 0.5rem;
+width: 100vw;}
+
+.special{color: rgb(40, 198, 29);}
+
+.myclass {
+    color: blue;}
+h3.myclass{color: blueviolet;} 
+h1{font-size: 4em;}
+
+p{
+    color:rgba(255, 0,0, 0.5); 
+    width: 80vw;
+    background-color: white ;
+
+} 
+a{color: inherit}
+p:hover{color: aqua;}
