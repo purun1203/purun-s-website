@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+		*{
+			padding: 0;
+			margin:0;
+		}
+		#box{
+			position: absolute;
+			width: 100%;
+			height: 250px;
+			font-size: 215px;
+			font-weight: 3px;
+		}
+        #mlBox {
+		   
+			margin: 0 auto;
+			width: 1150px;
+			height: 400px;
+        }
+ 
+        #mlImg {
+            width: 100%;
+            height: 100%;
+        }
+ 
+        #mlImg img {
+            width: 100%;
+            height: 100%;
+            display: none;
+			
+        }
+ 
+        #mlSpan {
+			margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+ 
+        #mlSpan span {
+            display: block;
+            width: 8px;
+            height: 8px;
+            background: black;
+            border-radius: 50px;
+            margin: 0 2px;
+            opacity: 0.4;
+        }
+ 
+        #mlImg #mlShow {
+            display: block;
+        }
+        #mlSpan #mlOn {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+	<div id="box">
+		GUODEGANG
+	</div>
+	<br><br><br><br><br><br>
+    <div id="mlBox">
+		<div id="show">
+        <div id="mlImg">
+            <img src="../images/Guo Degang .jpeg" alt="" id="mlShow">
+            <img src="../images/Guo Degang and Yu Qian.jpeg" alt="">
+            <img src="../images/Guo Degang .jpeg" alt="">
+		    <img src="../images/Guo Degang and Yu Qian.jpeg" alt="">
+        </div>
+		</div>
+        <p id="mlSpan">
+            <span id="mlOn"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </p>
+    </div>
+    <script>
+        ml(true); 
+        function ml(indicator) {
+            var oMlBox = document.getElementById('mlBox'); 
+            var oMlImg = document.getElementById('mlImg'); 
+            var oMlSpan = document.getElementById('mlSpan'); 
+            var aSpan = oMlSpan.getElementsByTagName('span'); 
+            var aImg = oMlImg.getElementsByTagName('img'); 
+            var u = 0; 
+            var shut = null; 
+            function f1() {
+                for (var i = 0; i < aSpan.length; i++) {
+                    aSpan[i].id = ''; 
+                    aImg[i].id = ''; 
+                }
+                aSpan[u].id = 'mlOn'; 
+                aImg[u].id = 'mlShow'; 
+            }
+            for (var f = 0; f < aSpan.length; f++) { 
+                aSpan[f].index = f; 
+                aSpan[f].onclick = function () { 
+                    u = this.index;
+                    f1(); 
+                }
+            }
+          
+            function f2() {
+                shut = setInterval(function () { 
+                    u++; 
+                    if (u >= aImg.length) { 
+                        u = 0;
+                    }
+                    f1(); 
+                }, 3000);
+            }
+            f2();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px; /* 这里的数值可以根据需要进行调整 */
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 36px;
+  }
+  
+  .myclass {
+    font-size: 16px;
+    text-align: left;
+    margin-top: 20px; /* 这里的数值可以根据需要进行调整 */
+  }
