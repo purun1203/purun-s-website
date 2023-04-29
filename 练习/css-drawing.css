@@ -1,0 +1,208 @@
+*,body {
+    margin:0
+    padding：0
+}
+div {
+    margin-bottom: 20px;
+}
+
+/* DRAWING SHAPES */
+
+
+
+#瓶身 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 300px 75px 0 75px;
+    border-color: #3ac52d transparent transparent transparent;
+    transform: translate(850px, 150px);
+}
+
+
+#球身子{
+    position: fixed;
+    top: 0px;
+    left: 8px;
+    transform: translate(370px,490px);
+    height: 150px;
+    width: 150px;
+    background-color: rgb(9, 204, 87);
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 0px solid rgb(9, 204, 87);
+}
+
+#瓶底{
+  transform: translate(395px,210px);
+  width: 0; /* 宽度为0，用border实现 */
+  height: 0; /* 高度为0，用border实现 */
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid rgb(9, 204, 87);
+}
+
+
+
+
+
+
+#橘子1{
+    transform: translate(340px,150px);
+    width: 80px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(239, 129, 51);
+}
+
+
+#橘子2{
+    transform: translate(330px,120px);
+    width: 80px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(247, 118, 25);
+}
+
+
+#橘子3{
+    transform: translate(400px,20px);
+    width: 80px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(247, 148, 78);
+}
+
+#橘子4{
+    transform: translate(400px,16px);
+    width: 80px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(239, 129, 51);
+}
+
+
+
+#rectangle {
+    width: 200px;
+    height: 100px;
+    background-color: black;
+}
+
+
+#circle-inside {
+    /* relative to the parent */
+    width: 50%;
+    height: 50%;
+    position: relative;
+    top: 25%;
+    left: 25%;
+
+    border-radius: 50%;
+    background-color: red;
+}
+#oval {
+    width: 200px;
+    height: 100px;
+    border-radius: 100px / 50px;
+    background-color: black;
+}
+#triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid black;
+}
+
+/* TRANSFORM */
+
+#square {
+    /* transform: translate(250px, 50px);  */
+    /* move 250px to the right, 50px to the bottom */ 
+}
+#rectangle {
+    /* transform: skew(10deg, 45deg); */
+    /* skew 10 deg on X-axis, 45deg on Y-axis */ 
+}
+#oval {
+    /* transform: rotate(-30deg); */
+    /* rotate 30deg colckwise */
+}
+#triangle {
+    /* transform: scale(1.2, 0.5); */
+    /* enlarge the width by 1.2, reduce the height by half */ 
+}
+#circle {
+    /* transform: scale(1.2, 0.5); */
+    /* will work on its children too */ 
+}
+
+
+/* TRANSITIONS */
+
+/*     
+#square:hover, 
+#rectangle:hover, 
+#circle:hover, 
+#oval:hover {
+    background-color: silver;
+    border-radius: 0;
+}
+#square, #rectangle, #circle, #oval {
+    transition: background-color 2s ease-in 0.5s;
+}
+#circle {
+    transition-property: background-color, border-radius;
+    transition-duration: 5s, 2s;
+}
+#triangle:hover {
+    border-bottom-color: silver;
+}
+#triangle {
+    transition: border-bottom-color 2s ease-in 0.5s;
+} */
+
+
+
+/* ANIMATIONS */
+
+/*   
+#square {
+    animation: breathe 2s ease-in infinite alternate;
+}
+#rectangle {
+    animation: breathe 3s infinite alternate forwards;
+}
+#circle {
+    animation: breathe 2.5s infinite alternate both;
+}
+#oval {
+    animation: breathe 1s ease-out infinite alternate;
+}
+#triangle {
+    animation: breathe 1.5s ease-in-out 5 reverse backwards;
+} */
+
+@keyframes breathe {
+    from {transform: scale(1, 1);}
+    to   {transform: scale(1.1, 1.1);}
+}
+
+/* #circle-inside {
+    animation: rainbow 5s ease-in-out infinite alternate;
+} */
+
+@keyframes colorChange {
+    from {background-color: red;}
+    to   {background-color: blue;}
+}
+
+@keyframes rainbow {
+    0%   {background-color: red;}
+    25%  {background-color: orange;}
+    50%  {background-color: yellow;}
+    75%  {background-color: green;}
+    100% {background-color: blue;}
+}

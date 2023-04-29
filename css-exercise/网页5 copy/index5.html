@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+		*{
+			padding: 0;
+			margin:0;
+		}
+		#menu{
+			
+			display: flex;
+			position: relative;
+		}
+		#menu>p{
+			width: 400px;
+			font-size: 1px;
+			padding: 80px 0px 0px 30px;
+		}
+		#menu>img{
+			display: block;
+			width: 800px;
+			height: 450px;
+			position: absolute;
+			right: 0px;
+		}
+		.active{
+			background-image: url("../images/WechatIMG6316.jpeg");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			
+		}
+    </style>
+</head>
+<body>
+	<div id="top" style="margin:30px 0px 0px 30px">
+		<h2>Guo Degang</h2>
+	</div>
+	<div id="menu">
+		
+		<p>Born on January 18, 1973 in Hongqiao District, Tianjin City<br>
+		Guo Degang, born on January 18, 1973 in Tianjin, China, with ancestral roots in Shanxi Province, China, is a mainland Chinese crosstalk actor, director, screenwriter, singer, actor, host, and founder of Beijing Deyun Society. In 1979, he began to learn art. In 1989, I worked at the Hongqiao Cultural Center. In 1998, the Beijing Cross Talk Conference (predecessor of Deyun Society) was founded. In 2000, we began collaborating with Gan Qian. On June 8, 2004, he became his teacher under Hou Yaowen; In October, the "Happy Teahouse" program of Beijing Literature and Art Broadcasting began broadcasting live recordings of Guo Degang, marking the beginning of media attention to Deyun Society. On November 5, 2005, a special event was held at the China Grand Theater in Tianjin. On April 8, 2006, in the performance of "Guo Degang Deyun Society Tianjin Provincial Cross talk Special Session", he broke his own record of 22 consecutive comebacks with 25 consecutive comebacks.</p>
+	<img src="../images/WechatIMG6316.jpeg"/>
+	</div>
+	<script>
+		var img =document.querySelector("#menu").querySelector("img")
+		var body=document.querySelector("body")
+		console.log(body)
+		
+		img.onmouseover=function(evt){
+			body.classList.add("active")
+			this.remove()
+		}
+	</script>
+    
+</body>
+</html>

@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: lightblue;
+  }
+  
+  h1 {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 0;
+    color: black;
+   
+  }
+  h1:hover {
+  color:  brown;
+}
+
+  
+  h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+  }
+  h2:hover {
+    color:  brown;
+  }
+
+  
+  h3 {
+    font-size: 20px;
+    text-align: right;
+    margin: 0;
+  }
+  h3:hover {
+    color:  brown;
+  }
+  
+  p {
+    margin-top: 0;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    line-height: 1.5;
+    text-align: left;
+    vertical-align: top;
+    padding: 50px;
+    margin-bottom: 0;
+    color: brown;
+    position: absolute;
+    bottom: 20px;
+ }
+
+
+ p:hover {
+    color: black;
+  }
+  
+  .myclass {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+    vertical-align: top;
+    padding: 50px;
+    margin-top: 0;
+    margin-left: 0; /* 去掉左边的空白 */
+  }

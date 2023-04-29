@@ -1,0 +1,6 @@
+.image-container img {
+    max-width: 300px;
+    max-height: 300px;
+    width: 300px;height: auto;
+  }
+
