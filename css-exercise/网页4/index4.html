@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="style4.css" />
     <meta charset="UTF-8">
     <title></title>
     <style>
@@ -40,16 +41,7 @@
             justify-content: center;
         }
  
-        #mlSpan span {
-            display: block;
-            width: 8px;
-            height: 8px;
-            background: black;
-            border-radius: 50px;
-            margin: 0 2px;
-            opacity: 0.4;
-        }
- 
+     
         #mlImg #mlShow {
             display: block;
         }
@@ -79,43 +71,6 @@
             <span></span>
         </p>
     </div>
-    <script>
-        ml(true); 
-        function ml(indicator) {
-            var oMlBox = document.getElementById('mlBox'); 
-            var oMlImg = document.getElementById('mlImg'); 
-            var oMlSpan = document.getElementById('mlSpan'); 
-            var aSpan = oMlSpan.getElementsByTagName('span'); 
-            var aImg = oMlImg.getElementsByTagName('img'); 
-            var u = 0; 
-            var shut = null; 
-            function f1() {
-                for (var i = 0; i < aSpan.length; i++) {
-                    aSpan[i].id = ''; 
-                    aImg[i].id = ''; 
-                }
-                aSpan[u].id = 'mlOn'; 
-                aImg[u].id = 'mlShow'; 
-            }
-            for (var f = 0; f < aSpan.length; f++) { 
-                aSpan[f].index = f; 
-                aSpan[f].onclick = function () { 
-                    u = this.index;
-                    f1(); 
-                }
-            }
-          
-            function f2() {
-                shut = setInterval(function () { 
-                    u++; 
-                    if (u >= aImg.length) { 
-                        u = 0;
-                    }
-                    f1(); 
-                }, 3000);
-            }
-            f2();
-        }
-    </script>
+   
 </body>
 </html>

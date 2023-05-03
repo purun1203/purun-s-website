@@ -4,3 +4,8 @@
     width: 300px;height: auto;
   }
 
+#bottom{animation-duration: 3s;
+  animation-name: slidein;
+}
+
+

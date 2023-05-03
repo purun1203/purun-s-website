@@ -7,10 +7,17 @@ img {
   h2 {
     text-align: center;
     font-size: 36px;
+    color: aqua;
+    
   }
   
   .myclass {
     font-size: 16px;
     text-align: left;
     margin-top: 20px; /* 这里的数值可以根据需要进行调整 */
+    color: blueviolet;
   }
+
+ .menu{
+  color: blueviolet;
+ }
