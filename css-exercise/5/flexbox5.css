@@ -20,6 +20,8 @@
 
     .red:hover {
        background-color:  green;
+       transform: rotate(10deg);
+       transform: scale(1.4)
       }
 
     .blue {
@@ -28,6 +30,8 @@
     }
     .blue:hover {
         background-color:yellow;
+        transform: rotate(10deg);
+
        }
 
        
@@ -35,13 +39,11 @@
       background-color: yellow;
       height: 280px;
     }
-
-    .yelow:hover {
-        background-color:  rgb(186, 0, 232);
-       }
     .yellow:hover {
-        background-color: rgb(186, 0, 232);
-      }
+        background-color:  rgb(202, 0, 233);
+        transform: rotate(-10deg);
+        
+       }
 
 
     .green {
@@ -50,4 +52,6 @@
     }
     .green:hover {
         background-color:  rgb(255, 0, 17);
+        transform: rotate(-10deg);
+        transform: scale(0.5)
        }
