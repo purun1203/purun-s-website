@@ -24,7 +24,7 @@ body {
     color: rgb(106, 193, 255);
    
     box-sizing: border-box;
-    width: 80%;
+    width:100%;
     margin: 10px 0;
     transform: skew(10deg); /* 沿x轴扭曲10度 */
     transform: skew(10deg, 20deg); /* 沿x轴扭曲10度，沿y轴扭曲30度 */
@@ -32,8 +32,7 @@ body {
   .item:hover{background-color:  rgb(106, 193, 255);
               color: aliceblue;}
 
-
 img
-{width:1500px;
- height: 800px;
+{width:1800px;
+ height: 1200px;
 }
