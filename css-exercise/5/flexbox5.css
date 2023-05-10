@@ -1,0 +1,53 @@
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px;
+      width: 1400px;
+    }
+
+    .grid-item {
+      background-color: #ddd;
+      height: 100px;
+    }
+
+    /* 不同颜色和尺寸的格子 */
+    
+    .red {
+      background-color: red;
+      height: 100px;
+    }
+
+    .red:hover {
+       background-color:  green;
+      }
+
+    .blue {
+      background-color: blue;
+      height: 200px;
+    }
+    .blue:hover {
+        background-color:yellow;
+       }
+
+       
+    .yellow {
+      background-color: yellow;
+      height: 280px;
+    }
+
+    .yelow:hover {
+        background-color:  rgb(186, 0, 232);
+       }
+    .yellow:hover {
+        background-color: rgb(186, 0, 232);
+      }
+
+
+    .green {
+      background-color: green;
+      height: 150px;
+    }
+    .green:hover {
+        background-color:  rgb(255, 0, 17);
+       }

@@ -162,3 +162,57 @@ div {
     background-color: rgb(255, 179, 25);
 }
 
+
+#棍子1{
+    position: absolute;
+    top:-30%;
+    left: -150px;
+    height: 40px;
+    width: 10px;
+    height: 160px;
+  
+    background-color: rgb(0, 0, 0);
+}
+#棍子2{
+    position: absolute;
+    top:-30%;
+    left: -100px;
+    height: 40px;
+    width: 10px;
+    height: 160px;
+    transform: rotate(10deg); /* 以元素中心点为原点顺时针旋转30度 */
+    background-color: rgb(0, 0, 0);
+}
+
+#棍子3{
+    position: absolute;
+    top:-30%;
+    left: -90px;
+    height: 40px;
+    width: 10px;
+    height: 160px;
+    transform: rotate(15deg); /* 以元素中心点为原点顺时针旋转30度 */
+    background-color: rgb(0, 0, 0);
+}
+
+#棍子4{
+    position: absolute;
+    top:-30%;
+    left: -169px;
+    height: 40px;
+    width: 10px;
+    height: 160px;
+    transform: rotate(-13deg); /* 以元素中心点为原点顺时针旋转30度 */
+    background-color: rgb(0, 0, 0);
+}
+
+#棍子4{
+    position: absolute;
+    top:-30%;
+    left: -182px;
+    height: 40px;
+    width: 10px;
+    height: 160px;
+    transform: rotate(-17deg); /* 以元素中心点为原点顺时针旋转30度 */
+    background-color: rgb(0, 0, 0);
+}

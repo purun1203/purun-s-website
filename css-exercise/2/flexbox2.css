@@ -1,0 +1,56 @@
+
+
+.item{
+  background: rgb(255, 172, 217);
+  border: 1px solid black;
+  height: 500px;
+  text-align: end;
+  
+}
+
+
+  .container {
+      display: grid;
+      grid-template-columns: 16.6%  16.6%  16.6%  16.6% 16.6% 16.98% ; /* 将网格分为3列，其宽度从左到右分别为20%，50%，30% */
+      grid-template-rows: 22.2%  22.2% 22.2%； /* 将网格分为2行，其高度从上到下分别为15%，85% */
+    }
+
+
+    
+    .grid-item {
+      overflow: visible;
+    }
+
+body {
+margin: 0;
+padding: 0;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: end;
+padding: 10px;
+background-color: lightblue;
+}
+
+
+
+.myclass {
+font-family: Arial, sans-serif;
+font-size: 20px;
+line-height: 1.5;
+text-align: left;
+vertical-align: bottom;
+padding: 50px;
+margin-top: 0;
+margin-left: 0; /* 去掉左边的空白 */
+}
+
+.item:hover {
+transform: scaleX(2);
+color:  rgb(255, 255, 255);
+
+
+}
+

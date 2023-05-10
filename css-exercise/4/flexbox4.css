@@ -1,0 +1,41 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-color: rgb(106, 193, 255);
+  }
+  
+  .container {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    
+  }
+  
+
+
+  .item {
+    align-items: center;
+    flex: 1 0 0;
+    background-color: rgb(242, 255, 128);
+    color: rgb(106, 193, 255);
+   
+    box-sizing: border-box;
+    width: 80%;
+    margin: 10px 0;
+    transform: skew(10deg); /* 沿x轴扭曲10度 */
+    transform: skew(10deg, -20deg); /* 沿x轴扭曲10度，沿y轴扭曲30度 */
+  }
+  .item:hover{background-color:  rgb(106, 193, 255);
+              color: aliceblue;}
+
+
+
+video {width: 100%;
+  height: auto;
+
+
+}
